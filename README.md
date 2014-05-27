@@ -1,7 +1,7 @@
 angularts-sandbox
 ==================
 
-The repo for playing with the combination of AngularJS and Typescript. 
+The repo for playing with the combination of [AngularJS](https://angularjs.org/) and [Typescript](http://www.typescriptlang.org/). 
 
 
 Inspirational Repos
