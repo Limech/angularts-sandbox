@@ -1,4 +1,4 @@
 angularts
 =========
 
-AngularJS with Typescript 
+The repo for playing with the combination of AngularJS and Typescript. 
