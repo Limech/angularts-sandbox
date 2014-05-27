@@ -1,5 +1,5 @@
-angularts
-=========
+angularts-sandbox
+==================
 
 The repo for playing with the combination of AngularJS and Typescript. 
 
