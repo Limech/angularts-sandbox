@@ -11,5 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "connect": "~2.17.1"
+  },
+  "devDependencies": {
+    "grunt-ts": "^1.11.2",
+    "typescript": "^1.0.1",
+    "grunt": "^0.4.5"
   }
 }
