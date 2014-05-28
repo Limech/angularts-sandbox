@@ -8,8 +8,6 @@
     "bootstrap": "~3.0.3",
     "angular-bootstrap": "~0.10.0",
     "angular-ui-router": "~0.2.7",
-    "angular-ui": "~0.4.0",
-	"dt-angular": "~1.2.15",
-    "dt-angular-ui-bootstrap": "*"
+    "angular-ui": "~0.4.0"
   }
 }
