@@ -1,4 +1,8 @@
+/// <reference path="../../../typings/jquery/jquery.d.ts" /> 
+/// <reference path="../../../typings/angularjs/angular.d.ts" /> 
+
 'use strict';
+
 
 interface IMyFeatureCtrlScope extends ng.IScope {
     vm: MyFeatureSrvc;
