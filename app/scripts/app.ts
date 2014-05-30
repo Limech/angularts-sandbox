@@ -1,6 +1,6 @@
 'use strict';
 
 var sandboxApp: ng.IModule = angular.module('sandboxApp', [])
-    .service('myFeatureSrvc', MyFeatureSrvc)
+    .service('myFeatureSvc', MyFeatureSvc)
     .controller('myFeatureOneCtrl', MyFeatureCtrl)
     .controller('myFeatureTwoCtrl', MyFeatureCtrl);

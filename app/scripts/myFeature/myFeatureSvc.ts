@@ -1,6 +1,6 @@
 'use strict';
 
-class MyFeatureSrvc{
+class MyFeatureSvc{
     
     public status: boolean = false;
     constructor(){}

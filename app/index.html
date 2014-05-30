@@ -9,23 +9,25 @@
 <body data-ng-cloak>
     <h1>Sharing data between controllers without polluting the parent scope:</h1>
 
-    <div data-ng-controller="myFeatureOneCtrl">
-        <button data-ng-click="vm.status=true">True</button>
-        <button data-ng-click="vm.status=false">False</button>
+    <div data-ng-controller="myFeatureOneCtrl as featureOne">
+        <button data-ng-click="featureOne.svc.status=true">True</button>
+        <button data-ng-click="featureOne.svc.status=false">False</button>
         <p>
-            Ctrl 1 Output: <b>{{vm.status}}</b>
+            Ctrl 1 Output: <b>{{featureOne.svc.status}}</b>
         </p>
     </div>
     
-    <div data-ng-controller="myFeatureTwoCtrl">
-        <button data-ng-click="vm.status=true">True</button>
-        <button data-ng-click="vm.status=false">False</button>
+    <div data-ng-controller="myFeatureTwoCtrl as featureTwo">
+        <button data-ng-click="featureTwo.svc.status=true">True</button>
+        <button data-ng-click="featureTwo.svc.status=false">False</button>
         <p>
-            Ctrl 2 Output: <b>{{vm.status}}</b>
+            Ctrl 1 Output: <b>{{featureTwo.svc.status}}</b>
         </p>
     </div>
     
-    <script src="scripts/myFeature/myFeatureSrvc.js" type="text/javascript"></script>
+    
+    
+    <script src="scripts/myFeature/myFeatureSvc.js" type="text/javascript"></script>
     <script src="scripts/myFeature/myFeatureCtrl.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
 </body>
