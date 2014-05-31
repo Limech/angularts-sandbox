@@ -4,13 +4,13 @@
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 
-/// <reference path="../jquery/jquery.d.ts" />
+/// <reference path="../dt-jquery/jquery.d.ts" />
 
 declare var angular: ng.IAngularStatic;
 
 // Support for painless dependency injection
 interface Function {
-    $inject?: string[];
+    $inject:string[];
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -236,12 +236,9 @@ declare module ng {
         $watchCollection(watchExpression: string, listener: (newValue: any, oldValue: any, scope: IScope) => any): Function;
         $watchCollection(watchExpression: (scope: IScope) => any, listener: (newValue: any, oldValue: any, scope: IScope) => any): Function;
 
-        $watchGroup(watchExpressions: string[], listener: (newValue: any, oldValue: any, scope: IScope) => any): Function;
-        $watchGroup(watchExpressions: {(scope: IScope) : any}[], listener: (newValue: any, oldValue: any, scope: IScope) => any): Function;
-
         $parent: IScope;
 
-        $id: string;
+        $id: number;
 
         // Hidden members
         $$isolateBindings: any;
@@ -354,7 +351,6 @@ declare module ng {
     ///////////////////////////////////////////////////////////////////////////
     // LogService
     // see http://docs.angularjs.org/api/ng.$log
-    // see http://docs.angularjs.org/api/ng.$logProvider
     ///////////////////////////////////////////////////////////////////////////
     interface ILogService {
         debug: ILogCall;
@@ -362,11 +358,6 @@ declare module ng {
         info: ILogCall;
         log: ILogCall;
         warn: ILogCall;
-    }
-
-    interface ILogProvider {
-        debugEnabled(enabled: boolean): ILogProvider;
-        debugEnabled(): boolean;
     }
 
     // We define this as separete interface so we can reopen it later for
@@ -547,12 +538,6 @@ declare module ng {
 
         // Undocumented, but it is there...
         directive(directivesMap: any): ICompileProvider;
-
-        aHrefSanitizationWhitelist(): RegExp;
-        aHrefSanitizationWhitelist(regexp: RegExp): ICompileProvider;
-        
-        imgSrcSanitizationWhitelist(): RegExp;
-        imgSrcSanitizationWhitelist(regexp: RegExp): ICompileProvider;
     }
 
     interface ICloneAttachFunction {
@@ -638,7 +623,6 @@ declare module ng {
         status?: number;
         headers?: (headerName: string) => string;
         config?: IRequestConfig;
-        statusText?: string;
     }
 
     interface IHttpPromise<T> extends IPromise<T> {
