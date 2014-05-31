@@ -1,4 +1,3 @@
-'use strict';
 module ExampleTwo{
     export class RouteCtrl{
         constructor($routeProvider: ng.route.IRouteProvider, $locationProvider: ng.ILocationProvider){

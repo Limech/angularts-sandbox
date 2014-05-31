@@ -1,0 +1,17 @@
+<div class="example-panel">
+    <h1>Example 1: Sharing data between controllers without polluting the parent scope:</h1>
+    <div data-ng-controller="myFeatureOneCtrl as featureOne">
+        <button data-ng-click="featureOne.svc.status=true">True</button>
+        <button data-ng-click="featureOne.svc.status=false">False</button>
+        <p>
+            Ctrl 1 Output: <b>{{featureOne.svc.status}}</b>
+        </p>
+    </div>
+    <div data-ng-controller="myFeatureTwoCtrl as featureTwo">
+        <button data-ng-click="featureTwo.svc.status=true">True</button>
+        <button data-ng-click="featureTwo.svc.status=false">False</button>
+        <p>
+            Ctrl 1 Output: <b>{{featureTwo.svc.status}}</b>
+        </p>
+    </div>
+</div>

@@ -1,6 +1,7 @@
-'use strict'
 module ExampleThree{
-   class MyFeatureSrv{
-    
-   } 
+    class MyFeatureSrv{
+        constructor($resource: ng.resource.IResourceService){
+            return $resource('/api/resource-path.1');
+        }    
+    } 
 }
