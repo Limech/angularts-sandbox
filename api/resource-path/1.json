@@ -1,6 +1,6 @@
 {
 	"name" : "gadget",
-	"supplier" : "some store"
-	"price" : 9.99
+	"manufacturer" : "some company",
+	"price" : 9.99,
 	"isInStock" : true
 }

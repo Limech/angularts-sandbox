@@ -1,3 +1,23 @@
 <div class="example-panel">
-    <h1>Example 3: Resource</h1>
+	<div data-ng-controller="ex3FeatureCtrl as feature">
+	    <button data-ng-click="feature.getResource()">Get Resource</button>
+	    <table >
+	    	<tr>
+	    		<td>Product Name:</td>
+	    		<td>{{feature.product.name}}</td>
+	    	</tr>
+	    	<tr>
+	    		<td>Manufacturer:</td>
+	    		<td>{{feature.product.manufacturer}}</td>
+	    	</tr>
+	    	<tr>
+	    		<td>Price [CAD]:</td>
+	    		<td>{{feature.product.price}}</td>
+	    	</tr>
+	    	<tr>
+	    		<td>In Stock:</td>
+	    		<td>{{feature.product.isInStock}}</td>
+	    	</tr>
+	    </table>
+	</div>
 </div>
