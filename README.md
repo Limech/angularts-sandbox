@@ -15,3 +15,4 @@ Inspirational Repos
 Other References
 -----------------
 * [AngularJS Style Guide](https://github.com/mgechev/angularjs-style-guide)
+* [How to use AngularJS ng.resource.IResource with TypeScript](http://www.snip2code.com/Snippet/29738/How-to-use-AngularJS-ng-resource-IResour)
