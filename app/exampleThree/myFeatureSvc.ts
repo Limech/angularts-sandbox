@@ -1,15 +1,28 @@
 module ExampleThree{
    
-    export interface IProductResource extends ng.resource.IResourceClass<IProduct>{}
+    export interface IProductResource extends ng.resource.IResourceClass<IProduct>{
+        update(product: IProduct): IProduct;
+    }
+    
+// Work in progress:
+//
+//    export class ProductResource{
+//        constructor($resource : ng.resource.IResourceService){
+//            var updateAction : ng.resource.IActionDescriptor = {
+//                method: 'PUT',
+//                isArray: false
+//            };
+//            
+//            return <IProductResource> $resource('/api/resource-path/:id.json', {id: '@id'}, {update: updateAction}); 
+//        }
+//    }
     
     export class MyFeatureSvc{
         
         public productResource: IProductResource;
-        private $resource: ng.resource.IResourceService;
         
-        constructor($resource: ng.resource.IResourceService){          
-            this.$resource = $resource;         
-            this.productResource = <IProductResource>this.$resource('/api/resource-path/1.json');
+        constructor($resource: ng.resource.IResourceService){                  
+            this.productResource = <IProductResource>$resource('/api/resource-path/:id.json', {id: '@id'});
         }
     }
 

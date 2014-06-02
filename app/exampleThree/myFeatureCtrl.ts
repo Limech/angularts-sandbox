@@ -10,6 +10,7 @@ module ExampleThree{
     export class MyFeatureCtrl{
     
         public product: IProduct;
+        public newProduct: IProduct;
         private myFeatureSvc: MyFeatureSvc;
            
         constructor(ex3FeatureSvc: MyFeatureSvc){
@@ -17,7 +18,11 @@ module ExampleThree{
         }
 
         public getResource = (): void => {
-            this.product = this.myFeatureSvc.productResource.get();
+            this.product = this.myFeatureSvc.productResource.get({id: 1});
+        }
+        
+        public updateResource = (): void => {
+            this.product = this.myFeatureSvc.productResource.update(this.newProduct);
         }
     }
 }
