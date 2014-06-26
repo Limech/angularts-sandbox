@@ -1,5 +1,3 @@
-'use strict';
-
 module ExampleOne{
     export class MyFeatureSvc{
         

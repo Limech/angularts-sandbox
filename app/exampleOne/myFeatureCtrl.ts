@@ -1,14 +1,12 @@
 /// <reference path="../../../typings/jquery/jquery.d.ts" /> 
 /// <reference path="../../../typings/angularjs/angular.d.ts" /> 
 
-'use strict';
 module ExampleOne{
-       export class MyFeatureCtrl{
-          
+    export class MyFeatureCtrl{         
         public svc: MyFeatureSvc;
            
-        constructor(myFeatureSvc: MyFeatureSvc) {           
-             this.svc = myFeatureSvc;
+        constructor(ex1FeatureSvc: MyFeatureSvc) {           
+             this.svc = ex1FeatureSvc;
         }
     } 
 }   

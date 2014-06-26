@@ -18,44 +18,29 @@
 </head>
 <body data-ng-cloak>
 
-	<div class="example-panel">
-	    <h1>Example 1: Sharing data between controllers without polluting the parent scope:</h1>
-	    <div data-ng-controller="myFeatureOneCtrl as featureOne">
-	        <button data-ng-click="featureOne.svc.status=true">True</button>
-	        <button data-ng-click="featureOne.svc.status=false">False</button>
-	        <p>
-	            Ctrl 1 Output: <b>{{featureOne.svc.status}}</b>
-	        </p>
-	    </div>
-	    <div data-ng-controller="myFeatureTwoCtrl as featureTwo">
-	        <button data-ng-click="featureTwo.svc.status=true">True</button>
-	        <button data-ng-click="featureTwo.svc.status=false">False</button>
-	        <p>
-	            Ctrl 1 Output: <b>{{featureTwo.svc.status}}</b>
-	        </p>
-	    </div>
-	</div>
+	<div data-example-one> </div>	    
+	<div data-example-two> </div>
+ 	<div data-example-three> </div>
     
-    <div class="example-panel">
-	    <h1>Example 2: Routing</h1>    
-	    <a href="one">One</a>
-	    <a href="two">Two</a>
-	    <div data-ng-view></div>
-    </div>
-
-	<div class="example-panel">
-	    <h1>Example 3: Resource</h1>
-	</div>
-    
-
     <!-- vendor javascript includes -->
     <script src="../vendor/angular/angular-route.js" type="text/javascript"></script>
     <script src="../vendor/angular-resource/angular-resource.js" type="text/javascript"></script>
     
     <!-- javascript includes -->
+    <script src="exampleOne/myFeatureDrct.js" type="text/javascript"></script>
     <script src="exampleOne/myFeatureSvc.js" type="text/javascript"></script>
     <script src="exampleOne/myFeatureCtrl.js" type="text/javascript"></script>
+    
+    <script src="exampleTwo/routeDrct.js" type="text/javascript"></script>
     <script src="exampleTwo/routeCtrl.js" type="text/javascript"></script>
+    
+    <script src="exampleThree/myFeatureDrct.js" type="text/javascript"></script>
+    <script src="exampleThree/myFeatureSvc.js" type="text/javascript"></script>
+    <script src="exampleThree/myFeatureCtrl.js" type="text/javascript"></script>
+    
     <script src="app.js" type="text/javascript"></script>
+    <script src="exampleOne/exampleOne.js" type="text/javascript"></script>
+    <script src="exampleTwo/exampleTwo.js" type="text/javascript"></script>
+    <script src="exampleThree/exampleThree.js" type="text/javascript"></script>
 </body>
 </html>
