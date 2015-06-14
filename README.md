@@ -11,6 +11,38 @@ Inspirational Repos
 * [AngularTypeScriptDemoCode by kenstone](https://github.com/kenstone/AngularTypeScriptDemoCode)
 * [angular-ts-seed by jeffmay](https://github.com/jeffmay/angular-ts-seed)
 
+So the *Markdown* preview is live?
+If this is good enough then this can replace **MarkdownPad Pro**.
+
+```javascript
+ var someVariable;
+ if (someVariable == "someText") {
+	 doSomething();
+ }
+```	 
+
+<style type="text/css">
+      table,td,th  { border: 1px dashed gray; }
+</style>
+	
+How about tables?
+
+| Header 1 | Header 2 | 
+|----------|----------|
+| Row 1    | Row 2    |
+| Maybe    | Not      |
+
+ I take it back.  :)
+ Hum.. how about pictures?
+ 
+ ![Alt text](..\..\..\git-worked.png "Optional title")
+ 
+## Some other header
+
+But you need to know the _syntax_ for __Markdown__ if you want to use this.
+
+
+
 
 Other References
 -----------------
