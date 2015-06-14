@@ -41,7 +41,7 @@ How about tables?
 
 But you need to know the _syntax_ for __Markdown__ if you want to use this.
 
-
+Let's see how well Git is supported.
 
 
 Other References
